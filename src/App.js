@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import ContadorClasse from './components/Contador'
+import MeuComponentClass from './components/MyComponent'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='App-header'>
+        <div>
+          <MeuComponentClass />
+          <ContadorClasse />
+        </div>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
